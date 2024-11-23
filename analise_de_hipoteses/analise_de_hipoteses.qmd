@@ -1,0 +1,33 @@
+---
+title: "Análise Exploratória com base em Hipóteses"
+author: "Wlademir Ribeiro Prates"
+format: 
+  html:
+    embed-resources: true
+editor: visual
+---
+
+# Key takeaways
+- Adicionar aqui pontos com os principais insights.
+
+# Hipóteses
+
+## H1. Uso elevado do crédito e pontuação baixa
+Clientes com uma maior proporção de uso do crédito (`credit_utilization_ratio`) tendem a apresentar uma pontuação de crédito baixa (`credit_score` como "Poor").
+- **Motivação**: Entender se o uso excessivo do crédito está associado a um maior risco de inadimplência ou dificuldade financeira, o que pode impactar estratégias de concessão de crédito.
+
+## H2. Histórico de crédito longo e pontuação alta
+Clientes que possuem histórico de crédito mais longo (`credit_history_age`) apresentam pontuações de crédito mais altas (`credit_score` como "Good").
+- **Motivação**: Avaliar se clientes com mais experiência no uso de crédito têm melhor comportamento financeiro, auxiliando na priorização de perfis para ofertas de crédito ou condições diferenciadas.
+
+## H3. Atrasos em pagamentos e perfis financeiros específicos
+Clientes que atrasam frequentemente os pagamentos (`num_of_delayed_payment` elevado) possuem características específicas no perfil financeiro, como renda anual baixa (`annual_income`) ou número elevado de empréstimos (`num_of_loan`).
+- **Motivação**: Identificar padrões de clientes propensos a atrasos para ajustar limites de crédito, taxas ou mesmo propor alternativas de refinanciamento.
+
+## H4. Ocupações e risco de crédito
+Certas ocupações (`occupation`) estão associadas a uma maior incidência de pontuação de crédito baixa (`credit_score` como "Poor").
+- **Motivação**: Descobrir quais grupos ocupacionais apresentam maior risco de crédito, permitindo estratégias específicas para gerenciamento de risco ou personalização de produtos financeiros.
+
+## H5. Pagamento mínimo, saldo baixo e taxas altas
+Clientes que realizam apenas o pagamento mínimo mensal (`payment_of_min_amount` = "Yes") têm um saldo mensal médio mais baixo (`monthly_balance`) e enfrentam taxas de juros mais altas (`interest_rate`).
+- **Motivação**: Verificar se o hábito de pagar apenas o mínimo está associado a um perfil financeiro mais vulnerável, ajudando a criar campanhas de educação financeira ou renegociação de dívidas.
