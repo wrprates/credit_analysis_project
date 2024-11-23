@@ -51,4 +51,26 @@ Este projeto tem como objetivo analisar e prever as pontuações de crédito de 
 
 3. **Entregáveis**:
    - Relatório de Análise Exploratória e relatório de Machine Learning, ambos gerados em **HTML** usando o pacote `Quarto` no R.
+   
+## Análise exploratória com base em hipóteses
 
+A análise exploratória deste projeto será guiada por hipóteses de negócio, formuladas com base no contexto e nas variáveis do dataset. Em vez de realizar apenas uma exploração genérica dos dados, essa abordagem busca investigar questões específicas e alinhadas às necessidades dos stakeholders. Essas hipóteses serão analisadas utilizando técnicas como testes estatísticos, agrupamento de perfis ou visualizações de dados, dependendo da natureza de cada questão. O objetivo é gerar insights práticos e objetivos, respondendo perguntas relevantes e facilitando a compreensão do comportamento financeiro dos clientes.
+
+### Hipóteses de Negócio
+
+Nesta etapa, a análise exploratória será guiada por hipóteses de negócio. Essas hipóteses buscam responder questões relevantes para os stakeholders e auxiliar na compreensão do comportamento financeiro dos clientes. As hipóteses definidas são:
+
+1. **Clientes com uma maior proporção de uso do crédito (`credit_utilization_ratio`) tendem a apresentar uma pontuação de crédito baixa (`credit_score` como "Poor").**
+   - **Motivação**: Entender se o uso excessivo do crédito está associado a um maior risco de inadimplência ou dificuldade financeira, o que pode impactar estratégias de concessão de crédito.
+
+2. **Clientes que possuem histórico de crédito mais longo (`credit_history_age`) apresentam pontuações de crédito mais altas (`credit_score` como "Good").**
+   - **Motivação**: Avaliar se clientes com mais experiência no uso de crédito têm melhor comportamento financeiro, auxiliando na priorização de perfis para ofertas de crédito ou condições diferenciadas.
+
+3. **Clientes que atrasam frequentemente os pagamentos (`num_of_delayed_payment` elevado) possuem características específicas no perfil financeiro, como renda anual baixa (`annual_income`) ou número elevado de empréstimos (`num_of_loan`).**
+   - **Motivação**: Identificar padrões de clientes propensos a atrasos para ajustar limites de crédito, taxas ou mesmo propor alternativas de refinanciamento.
+
+4. **Certas ocupações (`occupation`) estão associadas a uma maior incidência de pontuação de crédito baixa (`credit_score` como "Poor").**
+   - **Motivação**: Descobrir quais grupos ocupacionais apresentam maior risco de crédito, permitindo estratégias específicas para gerenciamento de risco ou personalização de produtos financeiros.
+
+5. **Clientes que realizam apenas o pagamento mínimo mensal (`payment_of_min_amount` = "Yes") têm um saldo mensal médio mais baixo (`monthly_balance`) e enfrentam taxas de juros mais altas (`interest_rate`).**
+   - **Motivação**: Verificar se o hábito de pagar apenas o mínimo está associado a um perfil financeiro mais vulnerável, ajudando a criar campanhas de educação financeira ou renegociação de dívidas.
